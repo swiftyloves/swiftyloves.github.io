@@ -1,3 +1,5 @@
+/* Theme color: #57a89a rgba(87,168,154,0.6) 92d7c6*/
+
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -20,14 +22,6 @@
    /*transform: translate3d(70px, 0, -800px) rotateY(30deg);*/
 }
 
-.title {
-  transform: translate(-50%, -50%);
-  text-align: center;
-  left: 50px;
-  top: 50px;
-  position: absolute;
-}
-
 .parallax__layer--base {
   transform: translateZ(0);
   z-index: 4;
@@ -43,9 +37,7 @@
 }
 
 #content {
-  background: white;
-  /*background: #FA4D92;*/
-  /*height: 10vh;*/
+  background: #FFFFFF;
 }
 
 #content .parallax__layer--back {
@@ -57,7 +49,7 @@
   padding: 10px 0px;
 }
 
-#banner ul{
+#banner ul, #work-exps{
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -65,9 +57,11 @@
   display: flex;
   width: 80%;
   margin: 0 auto;
+}
+#banner ul {
   text-align: center;
 }
-#banner ul li{
+#banner ul li, #work-exps li, #education li .thumbnail{
   -moz-flex: 1;
   -webkit-flex: 1;
   -o-flex: 1;
@@ -75,23 +69,88 @@
   flex: 1;
 
   line-height: 30px;
+}
+#banner ul li {
   font-family: 'Lato','Arial';
   font-weight: 200;
   color: #868686;
   border-right: 1px solid #CBCBCB;
 }
-
-#work-exps {
-  background: #FF66A1;
-
+#work-exps > li {
+  padding: 20px;
+  line-height: 10px;
+  font-family: 'Arial',"Lucida Sans Unicode","Lucida Grande",'sans-serif';
+}
+.thumbnail {
+  padding: 40px;
+  text-align: center;
+}
+.thumbnail img {
+  max-width: 80%;
+  max-height: 89px;
+}
+.title {
+  font-weight: 600;
+  color: rgba(0,0,0,0.8);
+  font-size: 20px;
+}
+.period {
+  font-family: 'Lato','Arial';
+  font-weight: 300;
+  color: #727272;
+  font-size: 14px;
+}
+#work-exps .des {
+  line-height: 3px;
+}
+.des {
+  color: rgba(0,0,0,0.6);
+}
+#work-exps .des ul,  #education .des ul{
+  margin-top: 25px;
+  line-height: 25px;
+}
+.des ul li:first-child{
+  font-weight: 600;
+  color: rgba(0,0,0,0.8);
 }
 
-#work-exps .parallax__layer--back {
-  background: rgb(60,100,200);
+#work-exps .fa-circle-o-notch, #education .fa-circle-o-notch{
+  font-size: 15px;
+  margin-bottom: 4px;
+  color: #57a89a;
 }
-#edu .parallax__layer--back {
-  background: #FF66A1;
+.fa-external-link {
+  font-size: 15px;
+  margin-bottom: 4px;
+  color: #2a6c61;
 }
-#web-projs .parallax__layer--back {
-  background: #FFD6E6;
+
+
+#education {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-top: 1px solid #57a89a;
+}
+#education > li {
+  margin-bottom: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
+}
+#education > li:nth-child(2) .thumbnail{
+  padding: 20px 40px;
+}
+#education li .des {
+  -moz-flex: 3;
+  -webkit-flex: 3;
+  -o-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+#education .des ul {
+  line-height: 25px;
 }
