@@ -42,15 +42,45 @@
   background-size: cover;
 }
 
-#banner {
-  background: #E8E8E8;
+#content {
+  background: white;
   /*background: #FA4D92;*/
   /*height: 10vh;*/
 }
 
-#banner .parallax__layer--back {
+#content .parallax__layer--back {
   transform: translateZ(-1px) scale(1);
 }
+
+#banner {
+  background: #E8E8E8;
+  padding: 10px 0px;
+}
+
+#banner ul{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#banner ul li{
+  -moz-flex: 1;
+  -webkit-flex: 1;
+  -o-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+
+  line-height: 30px;
+  font-family: 'Lato','Arial';
+  font-weight: 200;
+  color: #868686;
+  border-right: 1px solid #CBCBCB;
+}
+
 #work-exps {
   background: #FF66A1;
 
