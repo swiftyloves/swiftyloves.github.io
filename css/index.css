@@ -43,13 +43,37 @@
 #content .parallax__layer--back {
   transform: translateZ(-1px) scale(1);
 }
+#details > ul {
+  position: relative;
+}
+.category {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 70px;
+  color: #D5D5D5;
+  opacity: 0.5;
+  font-family: 'Lucida Grande','Lato','Ubuntu';
+  z-index: -1;
+  margin-top: -10px;
+}
+.tags {
+  /*margin: 10px auto;*/
+}
+.tag {
+  background: #57a89a;
+  color: white;
+  padding: 2px 6px;
+  font-size: 15px;
+  border-radius: 3px;
+  font-family: 'Arial',"Lucida Sans Unicode","Lucida Grande",'sans-serif';
+}
 
 #banner {
   background: #E8E8E8;
   padding: 10px 0px;
 }
-
-#banner ul, #work-exps{
+#banner ul, #work-exps, #websites{
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -61,7 +85,7 @@
 #banner ul {
   text-align: center;
 }
-#banner ul li, #work-exps li, #education li .thumbnail{
+#banner ul li, #work-exps li, #education li .thumbnail, #websites li{
   -moz-flex: 1;
   -webkit-flex: 1;
   -o-flex: 1;
@@ -110,7 +134,7 @@
   margin-top: 25px;
   line-height: 25px;
 }
-.des ul li:first-child{
+#work-exps .des ul li:first-child, #education .des ul li:first-child{
   font-weight: 600;
   color: rgba(0,0,0,0.8);
 }
@@ -127,7 +151,7 @@
 }
 
 
-#education {
+#education, #websites {
   width: 80%;
   margin: 0 auto;
   padding-top: 40px;
@@ -152,5 +176,33 @@
   flex: 3;
 }
 #education .des ul {
+  line-height: 25px;
+}
+
+.thumbnail-container {
+  padding: 4px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+#websites > li {
+  padding: 20px;
+}
+#websites .thumbnail {
+  padding: 0;
+  height: 200px;
+}
+#websites .thumbnail.eforum {
+  background: url('../images/thumbs/eforum.png');
+  background-size: cover;
+}
+#websites .thumbnail.pjtype {
+  background: url('../images/thumbs/pjtype.png');
+  background-size: cover;
+}
+#websites .thumbnail.teil {
+  background: url('../images/thumbs/teil.png');
+  background-size: cover;
+}
+#websites li{
   line-height: 25px;
 }
