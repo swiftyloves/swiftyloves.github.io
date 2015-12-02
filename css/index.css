@@ -72,7 +72,7 @@
 }
 
 #landing .parallax__layer--back {
-  background-image: url('../images/1_2.jpg');
+  background-image: url('../images/1_3.jpg');
   background-size: cover;
 }
 
@@ -276,7 +276,7 @@
   background-size: cover;
 }
 #sch-projects .thumbnail.movie2map {
-  background: url('../images/thumbs/movie2map2.png');
+  background: url('../images/thumbs/movie2map2.jpg');
   background-size: cover;
 }
 #sch-projects .thumbnail.ringtune {
