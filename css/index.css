@@ -21,6 +21,9 @@
 
    /*transform: translate3d(70px, 0, -800px) rotateY(30deg);*/
 }
+a {
+  text-decoration: none;
+}
 .name-container {
   position: absolute;
   font-size: 50px;
@@ -113,7 +116,7 @@
   background: #E8E8E8;
   padding: 10px 0px;
 }
-#banner ul, #work-exps, #websites, #projects, #projects, #sch-projects, #sch-projects-row2 {
+#banner ul, #work-exps, #websites, #projects, #projects, #sch-projects, #sch-projects-row2, #graphics {
   display: -webkit-flex;
   display: -moz-flex;
   display: -o-flex;
@@ -125,7 +128,7 @@
 #banner ul {
   text-align: center;
 }
-#banner ul li, #work-exps li, #education li .thumbnail, #websites li, #projects li, #sch-projects li, #sch-projects-row2 li{
+#banner ul li, #work-exps li, #education li .thumbnail, #websites li, #projects li, #sch-projects li, #sch-projects-row2 li, #graphics li{
   -moz-flex: 1;
   -webkit-flex: 1;
   -o-flex: 1;
@@ -189,7 +192,7 @@
   margin-bottom: 4px;
   color: #2a6c61;
 }
-#education, #websites, #projects, #sch-projects, #sch-projects, #graphics {
+#profile, #work-exps, #education, #websites, #projects, #sch-projects, #sch-projects, #graphics {
   width: 80%;
   margin: 0 auto;
   padding-top: 40px;
@@ -219,7 +222,7 @@
   line-height: 25px;
 }
 
-.thumbnail-container {
+.thumbnail-container, .paint-container {
   padding: 4px;
   border: 1px solid rgba(128,128,128,0.5);
   margin-bottom: 10px;
@@ -290,4 +293,8 @@
 #sch-projects-row2 .thumbnail.kingofplants {
   background: url('../images/thumbs/kingofplants.png');
   background-size: cover;
+}
+
+#paint-container {
+
 }

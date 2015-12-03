@@ -32,20 +32,27 @@
               <li><h2>Work Experiences</h2></li>
               <li><h2>Education</h2></li>
               <li><h2>Websites</h2></li>
-              <li><h2>School Projects</h2></li>
-              <li><h2>Design Work</h2></li>
+              <li><h2>Projects</h2></li>
+              <li><h2>Course Projects</h2></li>
               <li><h2>Graphical Work</h2></li>
+              <li><h2>Skills</h2></li>
             </ul>
         </div>
         <div class="parallax__layer parallax__layer--back">
         </div>
         <div id="details">
+            <ul id="profile">
+                <li>Wu, Jie-Wei</li>
+                <li><i class="fa fa-linkedin-square"></i> </li>
+                <a href="https://www.facebook.com/jiewie.wu"><li><i class="fa fa-facebook-official"></i>jiewie.wu</li></a> </li>
+                <li><i class="fa fa-linkedin-square"></i> Jan 23</li>
+            </ul>
             <ul id="work-exps">
                 <div class="category">WORK EXPERIENCES</div>
                 <li>
-                    <div class="thumbnail"><img src="./images/thumbs/yahoo_logo.png" /></div>
+                    <div class="thumbnail"><a target="_blank" href="https://www.yahoo.com"><img src="./images/thumbs/yahoo_logo.png" /></a></div>
                     <div class="des">
-                        <span class="title"> Yahoo! Inc. </span><span class="period"> 2014-Present</span>
+                        <a target="_blank" href="https://www.yahoo.com"><span class="title"> Yahoo! Inc. </span><span class="period"> 2014-Present</span></a>
                         <ul>
                             <li><i class="fa fa-circle-o-notch"></i>
                                 Software Engineer
@@ -63,9 +70,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="thumbnail"><img src="./images/thumbs/womany_logo.jpg" /></div>
+                    <div class="thumbnail"><a href="http://womany.net/" target="_blank"><img src="./images/thumbs/womany_logo.jpg" /></a></div>
                     <div class="des">
-                        <span class="title"> Womany </span><span class="period">Aug 2013 - Oct 2013</span>
+                        <a href="http://womany.net/" target="_blank"><span class="title"> Womany </span><span class="period">Aug 2013 - Oct 2013</span></a>
                         <ul>
                             <li><i class="fa fa-circle-o-notch"></i>
                                 Web front-end Internship
@@ -355,41 +362,44 @@
                 </li>
             </ul>
             <ul id="graphics">
-                <div class="category">GRAPHICAL WORK</div>
-                <li></li>
+                <div class="category">GRAPHICS</div>
+                <li class="paint-container">
+                    <img src="./images/graphics/1_small.jpg">
+                </li>
+                <li class="paint-container">
+                    <img src="./images/graphics/1_small.jpg">
+                </li>
             </ul>
             <ul id="skills">
+                <div class="category">SKILLS</div>
+                <ul>
+                    <li>React & Flux</li>
+                    <li>Nodejs</li>
+                    <li>Ruby on Rails</li>
+                </ul>
+                <ul>
+                    Basic:
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Mathlab</li>
+                    <li>Objective C</li>
+                </ul>
+                <ul>
+                    <li>Git, Vim</li>
+                    <li>Sketch, Illustrator, Photoshop</li>
+                </ul>
+
             </ul>
         </div>
     </div>
 </div> 
-  <!-- 
-    <h2>Skills</h2>
-    <ul>
-        <li>React & Flux</li>
-        <li>Nodejs</li>
-        <li>Ruby on Rails</li>
-    </ul>
-    <ul>
-        Basic:
-        <li>C++</li>
-        <li>Python</li>
-        <li>Mathlab</li>
-        <li>Objective C</li>
-    </ul>
-    <ul>
-        <li>Git, Vim</li>
-        <li>Sketch, Illustrator, Photoshop</li>
-    </ul>
-    </div>
- <div>-->
-<!-- <script src="./result.js"></script> -->
+<script src="./js/index.js"></script>
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-70950130-1', 'auto');
   ga('send', 'pageview');
