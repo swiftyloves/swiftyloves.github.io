@@ -199,6 +199,21 @@ a {
   padding-bottom: 20px;
   border-top: 1px solid #57a89a;
 }
+#profile {
+  border: 0;
+}
+#profile li {
+  color: rgba(0,0,0,0.7);
+  line-height: 40px;
+  font-size: 17px;
+}
+#profile li a {
+  color: rgba(0,0,0,0.7);
+  font-size: 20px;
+}
+#profile li .mail {
+  font-size: 17px;
+}
 
 #education > li {
   margin-bottom: 40px;
