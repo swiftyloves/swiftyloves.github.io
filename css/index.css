@@ -1,7 +1,7 @@
 /* Theme color: #57a89a rgba(87,168,154,0.6) 92d7c6*/
 
 .parallax {
-  perspective: 1px;
+  perspective: 10px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -38,34 +38,35 @@ a {
   text-shadow: 1px 1px #57a89a;
 }
 .button {
-  transform: translateZ(0.1px) scale(-2);
+  transform: translateZ(0px) scale(1);
   z-index: 100;
   background: rgba(255,255,255,0.7);
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   position: absolute;
-  left: 49%;
+  left: 45%;
   /*top: 10%;*/
   bottom: 20px;
   text-align: center;
-  line-height: 132px;
+  line-height: 144px;
   color: #57a89a;
   animation:myfirst 1s infinite;
+  font-size: 21px;
 }
 
 @keyframes myfirst
 {
-  0%   {line-height:132px;}
-  50%  {line-height:160px;}
-  100% {line-height:132px;}
+  0%   {line-height:144px;}
+  50%  {line-height:170px;}
+  100% {line-height:144px;}
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
 {
-  0%   {line-height:132px;}
-  50%  {line-height:160px;}
-  100% {line-height:132px;}
+  0%   {line-height:144px;}
+  50%  {line-height:170px;}
+  100% {line-height:144px;}
 }
 
 .parallax__layer--base {
@@ -73,7 +74,7 @@ a {
   z-index: 4;
 }
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(0px);
   z-index: 3;
 }
 
@@ -196,30 +197,38 @@ a {
   margin-bottom: 4px;
   color: #2a6c61;
 }
-#profile, #work-exps, #education, #websites, #projects, #sch-projects, #sch-projects, #graphics {
+#profile, #work-exps, #education, #websites, #projects, #sch-projects, #sch-projects, #graphics, #skills {
   width: 80%;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 20px;
   border-top: 1px solid #57a89a;
 }
-#profile {
+#profile{
   border: 0;
 }
-#profile li {
+#profile li, #profile-end li {
   color: rgba(0,0,0,0.7);
   line-height: 40px;
   font-size: 17px;
 }
-#profile li a {
+#profile li a, #profile-end li a {
   color: rgba(0,0,0,0.7);
   font-size: 20px;
 }
-#profile li .mail {
+#profile li .mail, #profile-end li .mail {
   font-size: 17px;
 }
+#profile-end {
+  padding-left: 10%;
+  padding-top: 20px;
+  background: rgba(103, 103, 103,0.1);
+}
+#profile-end li {
+  line-height: 30px;
+}
 
-#education > li {
+#education > li, #skills {
   margin-bottom: 40px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -316,4 +325,14 @@ a {
 
 #paint-container {
 
+}
+
+#skills ul li {
+  margin-right: 10px;
+  color: rgba(103, 103, 103,0.9);
+  font-size: 18px;
+  line-height: 30px;
+}
+#skills ul.cate li{
+  text-align: right;
 }

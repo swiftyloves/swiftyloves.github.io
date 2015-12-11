@@ -10,12 +10,12 @@
     console.log('ids:',ids);
     
     var button = document.getElementsByClassName('button')[0];
-    console.log('button: ',button);
-        console.log('ids[0]:',ids[0]);
-    
+
     button.addEventListener('click', function() {
         console.log('ids[0]:',ids[0]);
-        document.getElementById(ids[0]).scrollIntoView();
+        var ban = document.getElementById('banner');
+        ban.scrollIntoView({block: "start", behavior: "smooth"});
+        // ban.animate({scrollTop: ban.offsetHeight}, 2000)
     });
 
     var ban = document.getElementById('banner');
