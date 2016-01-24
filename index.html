@@ -35,7 +35,7 @@
               <li><h2>Websites</h2></li>
               <li><h2>Projects</h2></li>
               <li><h2>Course Projects</h2></li>
-              <li><h2>Graphical Work</h2></li>
+              <li><h2>Graphics Work</h2></li>
               <li><h2>Skills</h2></li>
             </ul>
         </div>
@@ -49,7 +49,8 @@
                     <a target="_blank" href="https://tw.linkedin.com/in/jie-wei-wu-880a1552"><i class="fa fa-linkedin-square"></i></a>
                     <a href=""><i class="fa fa-envelope"></i> <span class='mail'>jaywiewu@gmail.com</span> </a>
                 </li>
-                <li id="design-pflio"><a href="https://drive.google.com/file/d/0B4zDAQbS2zfLcjZjaTF1WHN2SDg/view?usp=sharing">Design Work Portfolio <i class="fa fa-external-link"></i></a></li>
+                <li id="design-pflio"><a target="_blank" href="https://drive.google.com/file/d/0B4zDAQbS2zfLcjZjaTF1WHN2SDg/view?usp=sharing">Design Work Portfolio <i class="fa fa-external-link"></i></a></li>
+                <li id="design-pflio"><a target="_blank" href="https://drive.google.com/file/d/0B4zDAQbS2zfLdVJaZGlMWlJHdTQ/view?usp=sharing">Curriculum Vitae <i class="fa fa-external-link"></i></a></li>
             </ul>
             <ul id="work-exps">
                 <div class="category">WORK EXPERIENCES</div>
@@ -365,15 +366,27 @@
                 <li>
                 </li>
             </ul>
-            <!-- <ul id="graphics">
+            <ul id="graphics">
+
                 <div class="category">GRAPHICS</div>
-                <li class="paint-container">
-                    <img src="./images/graphics/1_small.jpg">
+                <li class="paint-container" onClick="showPic(this)">
+                    <img src="./images/graphics/s_28.jpg">
                 </li>
                 <li class="paint-container">
-                    <img src="./images/graphics/1_small.jpg">
+                    <img src="./images/graphics/s_1.jpg">
                 </li>
-            </ul> -->
+                <li class="paint-container">
+                    <img src="./images/graphics/s_3.jpg">
+                </li>
+                <li class="paint-container">
+                    <img src="./images/graphics/s_11.jpg">
+                </li>
+                <li class="paint-container">
+                    <img src="./images/graphics/s_yearbook.jpg">
+                </li>
+
+                <!-- https://www.flickr.com/photos/127489164@N07/albums/72157663178439509/with/23944924624/ -->
+            </ul>
             <ul id="skills">
                 <div class="category">SKILLS</div>
                 <span></span>
@@ -401,6 +414,10 @@
         </div>
     </div>
 </div> 
+<div id="major-graphic">
+    <img src="./images/graphics/28.jpg" />
+    <div id="close" onClick="closeMajorPic()"><i class="fa fa-times"></i></div>
+</div>
 <script src="./js/index.js"></script>
 </body>
 <script>

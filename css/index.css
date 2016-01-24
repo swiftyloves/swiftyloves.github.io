@@ -105,6 +105,11 @@ a {
   z-index: -1;
   margin-top: -10px;
 }
+@media screen and (max-width: 450px) {
+  .category {
+    font-size: 50px;
+  }
+}
 .tags {
   /*margin: 10px auto;*/
 }
@@ -324,10 +329,46 @@ a {
 #sch-projects-row2 .thumbnail.kingofplants {
   background: url('../images/thumbs/kingofplants.png');
   background-size: cover;
+  /*background-position: center;*/
 }
 
-#paint-container {
+#graphics {
+  flex-wrap: wrap;
+}
+#graphics .paint-container {
+  line-height: 0;
+  min-width: 100px;
+  margin-right: 5px;
+}
+#graphics .paint-container img {
+  width: 100%;
+}
 
+#major-graphic {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+#major-graphic img{
+  max-height: 90%;
+  max-width: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  font-size: 1.5em;
 }
 
 #skills ul li {

@@ -1,4 +1,21 @@
+var showPic = function (e) {
+    console.log('e: ',e)
+    var filename = e.getElementsByTagName('img')[0].src;
+    var newImageName = filename.replace('s_', '');
+    var node = document.getElementById('major-graphic');
+    node.getElementsByTagName('img').src = newImageName;
+    node.style.display = 'block';
+
+};
+
+var closeMajorPic = function () {
+    var node = document.getElementById('major-graphic');
+    node.style.display = 'none';
+};
+
 (function (){
+
+
     var details = document.getElementById('details');
     var uls = Array.prototype.slice.call(details.children);
     var ids = uls.map(function(ul){
