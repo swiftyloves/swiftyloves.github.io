@@ -351,11 +351,14 @@ a {
   left: 0;
   background: rgba(0,0,0,0.7);
   position: absolute;
-  z-index: 1;
-  display: flex;
-  display: -webkit-flex; /* Safari */
+  z-index: 10;
   justify-content: center;
   -webkit-justify-content: center;
+  display: none;
+}
+#major-graphic.show {
+  display: flex;
+  display: -webkit-flex; /* Safari */
 }
 #major-graphic img{
   max-height: 90%;

@@ -4,7 +4,7 @@ var showPic = function (e) {
     var newImageName = filename.replace('s_', '');
     var node = document.getElementById('major-graphic');
     node.getElementsByTagName('img').src = newImageName;
-    node.style.display = 'block';
+    node.className = 'show';
 
 };
 
