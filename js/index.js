@@ -1,16 +1,14 @@
 var showPic = function (e) {
-    console.log('e: ',e)
     var filename = e.getElementsByTagName('img')[0].src;
     var newImageName = filename.replace('s_', '');
     var node = document.getElementById('major-graphic');
-    node.getElementsByTagName('img').src = newImageName;
+    node.getElementsByTagName('img')[0].src = newImageName;
     node.className = 'show';
-
 };
 
 var closeMajorPic = function () {
     var node = document.getElementById('major-graphic');
-    node.style.display = 'none';
+    node.className = '';
 };
 
 (function (){
