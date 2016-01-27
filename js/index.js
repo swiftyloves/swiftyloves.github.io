@@ -1,3 +1,16 @@
+var showPic = function (e) {
+    var filename = e.getElementsByTagName('img')[0].src;
+    var newImageName = filename.replace('s_', '');
+    var node = document.getElementById('major-graphic');
+    node.getElementsByTagName('img')[0].src = newImageName;
+    node.className = 'show';
+};
+
+var closeMajorPic = function () {
+    var node = document.getElementById('major-graphic');
+    node.className = '';
+};
+
 (function (){
     var details = document.getElementById('details');
     var uls = Array.prototype.slice.call(details.children);
